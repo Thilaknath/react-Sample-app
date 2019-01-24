@@ -9,7 +9,7 @@
     "server": "live-server public/",
     "build:dev": "webpack",
     "build:prod": "webpack -p",
-    "dev-server": "webpack-dev-server --host=0.0.0.0"
+    "dev-server": "webpack-dev-server --host=0.0.0.0 --disable-host-check"
   },
   "dependencies": {
     "babel-cli": "6.24.1",
