@@ -24,10 +24,10 @@ module.exports = (env) => {
                 ]
             }]
         },
-        devtool: isProduction ? 'source-map':'cheap-module-eval-source-map',
+        devtool: isProduction ? 'source-map':'eval',
         devServer: {
             contentBase: path.join(__dirname, 'public'),
-            disableHostCheck: true
+            // disableHostCheck: true
         }
     }
 }
