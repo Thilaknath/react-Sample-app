@@ -1,0 +1,8 @@
+---
+applications:
+- name: cf-nodejs
+  memory: 512M
+  instances: 1
+  random-route: true
+  buildpack: https://github.com/cloudfoundry/nodejs-buildpack.git#v1.6.41
+  command: yarn dev-server
